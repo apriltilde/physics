@@ -1,0 +1,62 @@
+<!DOCTYPE html><script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script><textarea>
+Lecture: Polynomials
+
+---
+
+
+A polynomial of degree n has the form
+$$ P(x) = a + bx + cx^2 + dX^3 ... $$
+$$ = \sum{0}{n}{ax^i} $$
+
+The polynomial always has n roots where n is the highest power of x
+
+We can write a polynomial as a factor of the polynomial multiplied by a different polynomial of a lower degree
+
+We can also write any polynomial as the product of its factors
+$$ (x + a) * (x + b) * (x + c) ... $$
+
+Example: 
+
+$$ f(x) = x^4 - x^3 - 7x^2 + x + 6 $$
+$$ (x - 1) * (ax^3 + bx^2 + cx + d) $$
+
+We need to find a, b , c and d
+
+Method 1 :
+
+$$ ax^4 + (b - a)x^3 + (c - b) + (d - c)x -d $$
+Compared to our original polynomial we can figure out the unknown terms
+
+$$ a = 1 $$
+$$ b - a = -1 => b = 0 $$
+$$ c -b = -7 => c = -7 $$
+$$ d - c = 1 => d = -6 $$
+
+$$ (x - 1)(x^3 - 7x - 6) = (x - 1)g(x) $$
+$$ g(x) = (x + 1)(ax^2 + bx + c) $$
+
+We can repeat to find the factors of the original quartic polynomial
+$$ (x + 1)(x - 1)(x - 3)(x + 2) $$
+
+Method 2 :
+
+Assume we have found one root
+
+$$ (x - 1) * (ax^3 + bx^2 + cx + d) $$
+$$ ax^4 + (b - a)x^3 + (c - b) + (d - c)x -d $$
+
+$$ let x = 0 => d = -6 $$
+
+If we take the first derivative of the equation where x = 0 it can help us solve the factors
+
+$$ let x = 0 => d - c = 1 => c = -7 $$
+
+We can continue to derive to find the other unknown terms
+
+Method 3 : 
+
+Divide the quartic by $ (x - 1) $ to find the coefficients
+
+$$ x^4 - x^3 - 7x^2 + x + 6 $$
+$$ x^3 (x - 1 ) = x^4 - x^3 $$
+$$ x^3 (x - 1) * ( -7x^2 + x - 6 ) = x^4 - x^3 - 7x^2 + x + 6 $$
