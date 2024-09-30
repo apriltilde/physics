@@ -3,32 +3,62 @@ Lecture: Vectors
 
 ---
 
-We can find the length of a 3 dimensional vector with
+## Length of a 3D Vector
 
-$$ \sqrt{x^2 + y^2 + z^2} $$
+The length (magnitude) of a 3-dimensional vector \( \vec{v} = (x, y, z) \) can be found using:
+\[
+|\vec{v}| = \sqrt{x^2 + y^2 + z^2}
+\]
 
-Example :
+### Example
 
-We have a particle with an acceleration vector 30 degrees below the horizontal with a magnitude of $ 6ms^{-2} $
-$$ x = -a * cos(30) $$
-$$ y = -a * sin(30) $$
-$$ a = (-5.2, -3.0) $$
+Consider a particle with an acceleration vector that is \(30^\circ\) below the horizontal, with a magnitude of \(6 \, \text{ms}^{-2}\).
 
+The horizontal and vertical components are calculated as:
+\[
+x = -a \cos(30^\circ)
+\]
+\[
+y = -a \sin(30^\circ)
+\]
+Given \(a = 6 \, \text{m/s}^2\), the acceleration vector in Cartesian form is:
+\[
+\vec{a} = (-5.2, -3.0) \, \text{m/s}^2
+\]
 
-The cartesian unit vectors are: 
-	i, j , k
+## Cartesian Unit Vectors
 
-Any vector can be expressed in the unit vector form
+The Cartesian unit vectors are:
+- \( \mathbf{i} \) for the x-axis
+- \( \mathbf{j} \) for the y-axis
+- \( \mathbf{k} \) for the z-axis
 
-To add two vectors we just need to add their components together
-$$ (3i + 2j) + (-1i + 1j) = (2i + 3j) $$
+### Expressing Vectors in Unit Vector Form
 
-To multiply two vectors together we have two options
+Any vector \( \vec{v} \) can be expressed in terms of the unit vectors:
+\[
+\vec{v} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}
+\]
 
-Dot product: 
+## Adding Vectors
 
-$$ c = a . b $$
-The dot product will give us a scalar
-$$ c  = abcos{\theta} $$
-Where a and b are both the magnitudes of their respective vectors and $\theta$ is the angle between the vectors a and b placed tail to tail
+To add two vectors, simply add their respective components. For example:
+\[
+(3\mathbf{i} + 2\mathbf{j}) + (-1\mathbf{i} + 1\mathbf{j}) = (2\mathbf{i} + 3\mathbf{j})
+\]
 
+## Multiplying Vectors
+
+### 1. Dot Product
+
+The dot product of two vectors \( \vec{a} \) and \( \vec{b} \) is denoted as:
+\[
+c = \vec{a} \cdot \vec{b}
+\]
+The result of the dot product is a **scalar** and can be calculated as:
+\[
+c = |\vec{a}| |\vec{b}| \cos(\theta)
+\]
+where:
+- \( |\vec{a}| \) and \( |\vec{b}| \) are the magnitudes of vectors \( \vec{a} \) and \( \vec{b} \)
+- \( \theta \) is the angle between the two vectors when placed tail to tail

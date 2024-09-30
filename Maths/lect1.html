@@ -3,60 +3,89 @@ Lecture: Polynomials
 
 ---
 
+## Definition
 
-A polynomial of degree n has the form
-$$ P(x) = a + bx + cx^2 + dX^3 ... $$
-$$ = \sum{0}{n}{ax^i} $$
+A polynomial of degree \(n\) has the form:
+\[
+P(x) = a + bx + cx^2 + dx^3 + \ldots + kx^n
+\]
+Alternatively, this can be written as:
+\[
+P(x) = \sum_{i=0}^{n} a_i x^i
+\]
 
-The polynomial always has n roots where n is the highest power of x
+### Key Properties
+- A polynomial of degree \(n\) always has \(n\) roots (including complex and repeated roots).
+- Any polynomial can be expressed as a product of its factors:
+\[
+(x + a)(x + b)(x + c) \ldots
+\]
 
-We can write a polynomial as a factor of the polynomial multiplied by a different polynomial of a lower degree
+## Example
 
-We can also write any polynomial as the product of its factors
-$$ (x + a) * (x + b) * (x + c) ... $$
+Consider the polynomial:
+\[
+f(x) = x^4 - x^3 - 7x^2 + x + 6
+\]
+We can express it as:
+\[
+(x - 1)(ax^3 + bx^2 + cx + d)
+\]
+Our goal is to find \(a\), \(b\), \(c\), and \(d\).
 
-Example: 
+### Method 1: Comparing Coefficients
 
-$$ f(x) = x^4 - x^3 - 7x^2 + x + 6 $$
-$$ (x - 1) * (ax^3 + bx^2 + cx + d) $$
+Start by expanding:
+\[
+(x - 1)(ax^3 + bx^2 + cx + d) = ax^4 + (b - a)x^3 + (c - b)x^2 + (d - c)x - d
+\]
 
-We need to find a, b , c and d
+Comparing this with the original polynomial \(x^4 - x^3 - 7x^2 + x + 6\), we obtain:
 
-Method 1 :
+- \(a = 1\)
+- \(b - a = -1 \implies b = 0\)
+- \(c - b = -7 \implies c = -7\)
+- \(d - c = 1 \implies d = -6\)
 
-$$ ax^4 + (b - a)x^3 + (c - b) + (d - c)x -d $$
-Compared to our original polynomial we can figure out the unknown terms
+Thus, the factorization so far is:
+\[
+(x - 1)(x^3 - 7x - 6)
+\]
 
-$$ a = 1 $$
-$$ b - a = -1 => b = 0 $$
-$$ c -b = -7 => c = -7 $$
-$$ d - c = 1 => d = -6 $$
+Next, factor \(g(x) = x^3 - 7x - 6\):
+\[
+g(x) = (x + 1)(ax^2 + bx + c)
+\]
 
-$$ (x - 1)(x^3 - 7x - 6) = (x - 1)g(x) $$
-$$ g(x) = (x + 1)(ax^2 + bx + c) $$
+Repeating this process, the complete factorization is:
+\[
+(x + 1)(x - 1)(x - 3)(x + 2)
+\]
 
-We can repeat to find the factors of the original quartic polynomial
-$$ (x + 1)(x - 1)(x - 3)(x + 2) $$
+### Method 2: Using Derivatives
 
-Method 2 :
+Given \(f(x) = (x - 1)(ax^3 + bx^2 + cx + d)\), let:
+- \(x = 0 \implies d = -6\)
 
-Assume we have found one root
+Taking the derivative and setting \(x = 0\):
+- \(d - c = 1 \implies c = -7\)
 
-$$ (x - 1) * (ax^3 + bx^2 + cx + d) $$
-$$ ax^4 + (b - a)x^3 + (c - b) + (d - c)x -d $$
+Continue deriving and solving to find all coefficients.
 
-$$ let x = 0 => d = -6 $$
+### Method 3: Polynomial Division
 
-If we take the first derivative of the equation where x = 0 it can help us solve the factors
+Divide the original polynomial by \((x - 1)\):
 
-$$ let x = 0 => d - c = 1 => c = -7 $$
+1. Divide \(x^4 - x^3 - 7x^2 + x + 6\) by \(x - 1\):
+   - The first term: \(x^3\), multiply \(x^3(x - 1) = x^4 - x^3\)
+   - Subtract to obtain the remainder: \(-7x^2 + x - 6\)
+   
+Continue dividing to obtain all factors:
+\[
+(x - 1)(x^3 - 7x - 6)
+\]
+Further factor to get the complete factorization:
+\[
+(x + 1)(x - 1)(x - 3)(x + 2)
+\]
 
-We can continue to derive to find the other unknown terms
-
-Method 3 : 
-
-Divide the quartic by $ (x - 1) $ to find the coefficients
-
-$$ x^4 - x^3 - 7x^2 + x + 6 $$
-$$ x^3 (x - 1 ) = x^4 - x^3 $$
-$$ x^3 (x - 1) * ( -7x^2 + x - 6 ) = x^4 - x^3 - 7x^2 + x + 6 $$
