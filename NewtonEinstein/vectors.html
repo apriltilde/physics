@@ -62,3 +62,50 @@ c = |\vec{a}| |\vec{b}| \cos(\theta)
 where:
 - \( |\vec{a}| \) and \( |\vec{b}| \) are the magnitudes of vectors \( \vec{a} \) and \( \vec{b} \)
 - \( \theta \) is the angle between the two vectors when placed tail to tail
+
+We can also compute the dot product by multiplying the components of both vectors
+
+$$ c = \vec{a}_x \vec{b}_x + \vec{a}_y \vec{b}_y + \vec{a}_z \vec{b}_z $$ 
+
+### 2. Cross Multiplication
+
+The cross product is denoted as:
+\[
+c = \vec{a} \times \vec{b}
+\]
+
+#### Magnitude
+
+The result of the cross product is a **vector**
+We can calculate the magnitude with:
+
+$$ |\vec{c}| = |\vec{a}| |\vec{b}| \sin(\theta) $$
+
+#### Direction
+
+The direction of $\vec{c}$ is perpendicular to $\vec{a}$ and $\vec{b}$
+
+As there are two possible perpendicular vectors to $\vec{a}$ and $\vec{b}$ we need to decide which is correct
+
+We will decide a starting vector and if the angle $\theta$ between $\vec{a}$ and $\vec{b}$ turns in the anticlockwise direction the direction of the vector is up in relation to the plane
+
+#### Properties
+
+Cross multiplication is anticommutitive
+
+$$\vec{a} \times \vec{b} = -\vec{b} \times \vec{b} $$
+
+If $\vec{a}$ and $\vec{a}$ are parallel the cross product will be $0$
+
+If $\vec{a}$ and $\vec{a}$ are perpendicular  the cross product will be:
+$$  |\vec{a}| \times |\vec{b}| = \vec{a}\vec{b}$$
+
+This can be used to compute the cross products of the unit vectors without having to do a calculation
+
+#### Shortcuts
+
+$$ \vec{i} = (\vec{A}_j\vec{B}_k - \vec{A}_j\vec{B}_k) $$
+
+For calculating $\vec{j}$ and $vec{k}$ we just need to swap the symbols in the equation according to
+
+$$ \vec{i} => \vec{j} => \vec{k} => \vec{i} $$
