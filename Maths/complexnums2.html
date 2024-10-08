@@ -1,0 +1,48 @@
+<!DOCTYPE html><script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script><textarea>
+Lecture: Complex numbers 2
+
+---
+
+### Euler's formula
+
+$$ e^{i\theta} = cos(\theta) + i sin(\theta) $$
+
+We can write our complex number as
+$$ re^{i\theta} $$
+
+If we want to find the complex conjugate of a number in exponential form
+
+$$ z^* = re^{-i\theta} $$
+$$ \frac{z}{z^*} = e^{zi\theta} $$
+$$ \theta = \frac{1}{2i}ln(\frac{z}{z^*})$$
+
+#### Logs and exponentials
+
+$$ ln{z} = i\theta + ln(r) $$
+$$ z^n = r^n e^{ia\theta} $$
+
+We can use exponentials to simplify algebra
+
+$$ |z_1 z_2 | = |(a_1 + ib_1)(a_2 + ib_2)| $$
+$$ |z_1 z_2 | = |r_1 e^{i\theta_1} r_2 e^{i\theta_2} |$$
+$$ = |r_1 r_2 e^{i(\theta_1 + \theta_2)} |$$
+$$ arg(z_1 z_2) = \theta_1 + \theta_2 $$
+
+#### Other useful identities
+
+$$ e^{i\theta} = cos{\theta} + isin{\theta} $$
+$$ e^{-i\theta} = cos{\theta} - isin{\theta} $$
+
+<br>
+
+$$ sin(\theta) = \frac{e^{i\theta} - e^{-i\theta} }{2i} $$
+$$ cos(\theta) = \frac{ e^{i\theta} + e^{-i\theta} }{2} $$
+
+Example:
+
+$$ T =  sin(t) + sin(t + \pi/3) $$
+$$ T = Im(e^{it} + e^{i(t + \pi /3)}) $$
+$$ = Im(e^{it}(1 + e^i \pi/3)) $$
+$$ r^2 = \frac{3}{2}^2 + \frac{\sqrt{3}{2}^2 => r = \sqrt{3} $$
+$$ \theta = sin^-1(\frac{\sqrt{3}/2}{\sqrt{3}}) $$
+
