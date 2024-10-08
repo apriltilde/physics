@@ -38,11 +38,21 @@ $$ e^{-i\theta} = cos{\theta} - isin{\theta} $$
 $$ sin(\theta) = \frac{e^{i\theta} - e^{-i\theta} }{2i} $$
 $$ cos(\theta) = \frac{ e^{i\theta} + e^{-i\theta} }{2} $$
 
-Example:
+#### Example:
 
 $$ T =  sin(t) + sin(t + \pi/3) $$
+<br>
+We can find sin(t) as the imaginary part of $ e^{i\theta} = cos{\theta} + isin{\theta} $
+$$ sin(t) = Im(e^{it})$$
 $$ T = Im(e^{it} + e^{i(t + \pi /3)}) $$
-$$ = Im(e^{it}(1 + e^i \pi/3)) $$
-$$ r^2 = \frac{3}{2}^2 + \frac{\sqrt{3}{2}^2 => r = \sqrt{3} $$
-$$ \theta = sin^-1(\frac{\sqrt{3}/2}{\sqrt{3}}) $$
+$$ = Im(e^{it}(1 + e^{i \pi/3}) $$
+<br>
+
+To find r we must evaulate $1 + e^{i \pi/3}$
+
+$$ 1 + e^{i \frac{\pi}{3} } = 1 +  cos(\frac{\pi}{3}) + i sin(\frac{\pi}{3}) = r$$
+
+$$r^2 = \frac{3}{2}^2 + \frac{ \sqrt{3}}{2}^2 => r = \sqrt{3} $$
+
+$$ \theta = sin^{-1}( \frac{ \sqrt{3}/2}{\sqrt{3}}) $$
 
