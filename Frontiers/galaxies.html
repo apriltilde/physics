@@ -1,0 +1,46 @@
+<!DOCTYPE html><script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script><textarea>
+Lecture: Galaxies
+
+---
+
+### Hubble's Classification of Galaxies
+
+- Elliptical galaxies are shaped like ellipsoids, with no spiral arms. Its number denotes its elongation where E0 is spherical and E7 is highly elongated.
+- Spiral galaxies have a central bulge and spiral arms. They are classified as Sa to Sd based on the tightness of the spiral arms. Sd galaxies tend to have smaller central bulges.
+- Barred spiral galaxies have a central bar and spiral arms. They are classified as SBa to SBd.
+- Lenticular galaxies are a cross between elliptical and spiral galaxies. They have a central bulge, a disk of stars but no spiral arms.
+- Irregular galaxies have no regular structure. These tend to be small and faint.
+
+#### Colour
+Larger galaxies are more likely to be red and smaller galaxies are more likely to be blue. 
+This is because larger galaxies have used up their gas and dust to form stars, while smaller galaxies are still forming stars.
+
+### Luminosity Function
+
+The luminosity function is a measure of the number of galaxies at each luminosity.
+
+$$ \Phi(L) = \frac{dN}{dL} $$
+where $dN$ is the number of galaxies in a volume $dV$ and $dL$ is the luminosity interval.
+
+$$ N = \int_0 ^\infty \Phi(L) dL $$
+is the total number of galaxies in the universe.
+
+$$ L = \int_0 ^\infty L \Phi(L) dL $$
+is the total luminosity of the universe.
+
+### Schechter Function
+
+The Schechter function is a function that describes the luminosity function of galaxies.
+$$ \phi(L) =k L^{-1} \exp(-L/L^*) $$
+where k is a normalisation constant and $L^*$ is the luminosity at which the function changes slope.
+
+For faint galaxies ($L \ll L^*$), the function $\phi(L)$ is proportional to $L^{-1}$. To find the number of galaxies at a certain luminosity, we integrate the function
+
+$$ N = \int_0 ^{0,01L^* \phi(L) dL $$
+
+where $0.01L^*$ is the luminosity of the faintest galaxy.
+
+To find the total luminosity of the universe, we integrate the function
+$$ L = \int_0 ^\infty L (k L^{-1} \exp(-L/L^*)) dL $$
+$$ L = -k L^* \int_0 ^\infty \exp(-L/L^*) dL $$
+$$ L = k L^* $$
